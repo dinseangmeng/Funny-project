@@ -15,14 +15,23 @@ function prank(){
                 y=(Math.random()*contianer.clientHeight);
                 x=(Math.random()*contianer.clientWidth);
             }
-            if(i>10){
+            console.log(i);
+            if(i>10 && i<20) {
                 ele.innerText="I said don't Click Me😒";
-            }else ele.innerText="Don't Click Me🙄";
+            }
+            else if (i>20) {
+                ele.innerText="F*ck 😡 I said don't touch me";
+            } 
+            else{ 
+                ele.innerText="Don't Click Me🙄";
+            };
             ele.style.position="Absolute";
             ele.style.top=y+"px";
             ele.style.right=x+"px";
         }else{
-            document.getElementsByClassName("reply")[0].innerText="Believe me ! you are Pretty !😘"
+            if(i==1){
+                document.getElementsByClassName("reply")[0].innerText="Hello Pretty Girl🥵"
+            }else document.getElementsByClassName("reply")[0].innerText="Believe me ! you are Pretty !😘" ;
             btn.style.display="None";
         }
         
