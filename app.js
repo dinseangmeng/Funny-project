@@ -41,8 +41,8 @@ function action(i,e){
         ele.style.right=x+"px";
     }else{
         if(i==1){
-            document.getElementsByClassName("reply")[0].innerText="Hello Pretty Girl🥵"
-        }else document.getElementsByClassName("reply")[0].innerText="Believe me ! you are Pretty !😘" ;
+            document.getElementsByClassName("reply")[0].innerText="Aww I Love you too 🥹"
+        }else document.getElementsByClassName("reply")[0].innerText="I love you too ❤️" ;
         document.querySelector(".btn-contain").style.display="None";
     }
 }
