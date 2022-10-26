@@ -32,7 +32,7 @@ function action(i,e){
         ele.style.right=x+"px";
     }else{
         if(i==1){
-            document.getElementsByClassName("reply")[0].innerText="Aww I Love you too 🥹";
+            document.getElementsByClassName("reply")[0].innerText="Aww I Love you too 🥰";
         }else document.getElementsByClassName("reply")[0].innerText="I love you too ❤️" ;
         document.querySelector(".btn-contain").style.display="None";
         document.querySelector("#question").style.display="None";
