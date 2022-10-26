@@ -26,24 +26,17 @@ function action(i,e){
             y=(Math.random()*contianer.clientHeight);
             x=(Math.random()*contianer.clientWidth);
         }
-        console.log(i);
-        if(i>10 && i<20) {
-            ele.innerText="I said don't touch Me😒";
-        }
-        else if (i>20) {
-            ele.innerText="F*ck 😡 I said don't touch me";
-        } 
-        else{ 
-            ele.innerText="Don't touch Me🙄";
-        };
+
         ele.style.position="Absolute";
         ele.style.top=y+"px";
         ele.style.right=x+"px";
     }else{
         if(i==1){
-            document.getElementsByClassName("reply")[0].innerText="Aww I Love you too 🥹"
+            document.getElementsByClassName("reply")[0].innerText="Aww I Love you too 🥹";
         }else document.getElementsByClassName("reply")[0].innerText="I love you too ❤️" ;
         document.querySelector(".btn-contain").style.display="None";
+        document.querySelector("#question").style.display="None";
+        
     }
 }
 prank()
