@@ -21,6 +21,7 @@ body{
     position: relative;
 }
 .btn{
+    transition: 1000ms;
     padding: .5em;
     border: none;
     outline: none;
