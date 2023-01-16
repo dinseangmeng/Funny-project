@@ -1,7 +1,7 @@
+var btn=document.getElementsByClassName("btn-contain")[0];
+var contianer=document.getElementsByClassName("container")[0];
 function prank(){
     var i=0;
-    var btn=document.getElementsByClassName("btn-contain")[0];
-    var contianer=document.getElementsByClassName("container")[0];
     btn.addEventListener("click",(e)=>{
         i++;
         action(i,e);
@@ -14,15 +14,13 @@ function prank(){
     })
 }
 function action(i,e){
-    var contianer=document.getElementsByClassName("container")[0];
-    const ele=e.target;
-    const ele0=document.getElementsByClassName("btn")[0].getBoundingClientRect();
-    if(ele.classList.contains("no")){
+    const ele=e.target;//get what element is event fired on?
+    const ele0=document.getElementsByClassName("btn")[0];
+    if(ele.classList.contains("no")){//if button is has class name 'no'
         var x,y;
-        y=(Math.random()*contianer.clientHeight);
-        x=(Math.random()*contianer.clientWidth);
-        condition=((x==ele0.x || y==ele0.y));
-        while(condition){
+        y=(Math.random()*contianer.clientHeight);//generate location y coordinate
+        x=(Math.random()*contianer.clientWidth);//generate location x coordinate
+        while(((x==ele0.x || y==ele0.y))){//Make sure new location(x,y) not the same old one
             y=(Math.random()*contianer.clientHeight);
             x=(Math.random()*contianer.clientWidth);
         }
